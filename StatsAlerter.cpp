@@ -17,9 +17,9 @@ StatsAlerter::checkAndAlert(std::vector<float> argStatisticsValues)
   {
      for(auto indOfStatisticsValues = argStatisticsValues.begin(); indOfStatisticsValues  != end(); indOfStatisticsValues++)
      {
-       IAlerter l_Alerters;
+       IAlerter* l_Alerters;
        l_Alerters = static_cast<IAlerter*>(*indOfStatisticsValues);
-       l_Alerters.raiseAlerts();
+       l_Alerters->raiseAlerts();
      }
   }
 }
