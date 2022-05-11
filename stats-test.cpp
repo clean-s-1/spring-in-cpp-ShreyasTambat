@@ -4,6 +4,8 @@
 #include "stats.h"
 #include <cmath>
 #include "StatsAlerter.h"
+#include "EmailAlert.h"
+#include "LEDAlert.h"
 
 class EmailAlert;
 class LEDAlert;
