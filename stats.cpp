@@ -2,7 +2,7 @@
 #include <numeric>
 #inlcude <cmath>
 
-ComputeStatistics() {}
+ComputeStatistics::ComputeStatistics() {}
 
 Stats Statistics::ComputeStatistics(const std::vector<double>& argRawStatisticData) 
 {
