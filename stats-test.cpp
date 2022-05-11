@@ -5,7 +5,6 @@
 #include <cmath>
 #include "EmailAlert.h"
 #include "LEDAlert.h"
-#include "IAlerter.h"
 #include "StatsAlerter.h"
 
 using namespace Statistics;
