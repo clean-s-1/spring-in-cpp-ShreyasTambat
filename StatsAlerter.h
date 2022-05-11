@@ -10,5 +10,5 @@ class StatsAlerter
   void checkAndAlert(std::vector<float>& argStatisticsValues);
   
   float _MaxThreshold;
-  std::vector<IAlerter> _Alerters;
+  std::vector<IAlerter*> _Alerters;
 };
