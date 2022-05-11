@@ -4,7 +4,7 @@
 #include "stats.h"
 #include <cmath>
 #include "EmailAlert.h"
-#include "LedAlert.h"
+#include "LEDAlert.h"
 #include "IAlerter.h"
 #include "StatsAlerter.h"
 
