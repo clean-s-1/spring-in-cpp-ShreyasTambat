@@ -4,13 +4,9 @@
 #include <algorithm>
 using namespace std;
 
-StatsAlerter::StatsAlerter(float argMaxThreshold, std::vector<IAlerter>& argAlerters)
-{
-  _MaxThreshold = argMaxThreshold;
-  _Alerters = argAlerters;
-}
+StatsAlerter::StatsAlerter(float argMaxThreshold, std::vector<IAlerter*>& argAlerters):argMaxThreshold(_MaxThreshold), argAlerters(_Alerters){}
 
-void StatsAlerter::checkAndAlert(std::vector<float> argStatisticsValues)
+void StatsAlerter::checkAndAlert(std::vector<float>& argStatisticsValues)
 {
   auto maximumStatisticValue = std::max_element(argStatisticsValues.begin(), argStatisticsValues.end());
   
