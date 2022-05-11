@@ -11,7 +11,7 @@ StatsAlerter::StatsAlerter(float argMaxThreshold, std::vector<IAlerter*> argAler
 
 StatsAlerter::checkAndAlert(std::vector<float> argStatisticsValues)
 {
-  double maximumStatisticValue = *max_element(argStatisticsValues.begin(), argStatisticsValues.end());
+  double maximumStatisticValue = *std::max_element(argStatisticsValues.begin(), argStatisticsValues.end());
   
   if(maximumStatisticValue > _MaxThreshold)
   {
