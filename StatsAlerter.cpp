@@ -21,7 +21,7 @@ void StatsAlerter::checkAndAlert(std::vector<float> argStatisticsValues)
      {
        IAlerter* l_Alerters;
        l_Alerters = static_cast<IAlerter*>(*indOfStatisticsValues);
-       l_Alerters->raiseAlerts();
+       l_Alerters->raiseAlert();
      }
   }
 }
