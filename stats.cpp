@@ -1,12 +1,12 @@
-#include "Stats.h"
+#include "stats.h"
 #include <numeric>
 #inlcude <cmath>
 
 ComputeStatistics::ComputeStatistics() {}
 
-Stats Statistics::ComputeStatistics(const std::vector<double>& argRawStatisticData) 
+stats Statistics::ComputeStatistics(const std::vector<double>& argRawStatisticData) 
 {
-    Stats computedStatisticsData;
+    stats computedStatisticsData;
     
     if(0 == argRawStatisticData.size())
     {
