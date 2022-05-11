@@ -4,9 +4,9 @@ class IAlerter
 {
   public:
   
-  IAlerter() { }
+  //IAlerter() { }
   
-  virtual ~IAlerter() { }
+ // virtual ~IAlerter() { }
   
   virtual void raiseAlert() = 0;
   
