@@ -1,6 +1,6 @@
 #include "stats.h"
-#include <numeric>
-#include <cmath>
+#include<numeric>
+#include<cmath>
 
 stats Statistics::ComputeStatistics(const std::vector<double>& argRawStatisticData) 
 {
