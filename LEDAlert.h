@@ -4,7 +4,7 @@ class LEDAlert : public IAlerter
 {
   public:
   
-  //LEDAlert();
+  LEDAlert():ledGlows(false){}
   
   //~LEDAlert();
   
