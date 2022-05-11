@@ -8,4 +8,4 @@ class StatsAlerter
   
   float _MaxThreshold;
   std::vector<IAlerter*> _Alerters;
-}
+};
