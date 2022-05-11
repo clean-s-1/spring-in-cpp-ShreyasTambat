@@ -4,10 +4,8 @@ class LEDAlert : public IAlerter
 {
   public:
   
-  LEDAlert():ledGlows(false){}
-  
-  //~LEDAlert();
-  
+  LEDAlert();
+ 
   void raiseAlert(bool bValue);
   
   bool ledGlows;
