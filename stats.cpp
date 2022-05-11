@@ -1,4 +1,4 @@
-#include "Stats.h"
+#include "stats.h"
 #include <numeric>
 #include <stdio.h>
 #include <algorithm>
