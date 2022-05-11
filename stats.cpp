@@ -7,8 +7,6 @@
 using namespace std;
 using namespace Statistics;
 
-stats::stats():average(NAN),max(NAN),min(NAN){}
-
 stats Statistics::ComputeStatistics(const std::vector<float>& argRawStatisticData) 
 {
     stats computedStatisticsData;
