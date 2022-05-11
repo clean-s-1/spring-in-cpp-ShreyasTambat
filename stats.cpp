@@ -17,13 +17,13 @@ stats Statistics::ComputeStatistics(const std::vector<float>& argRawStatisticDat
     }
     
     //Max value computation
-    computedStatisticsData.max = *std::max_element(argRawStatisticData.begin(), argRawStatisticData.end());
+    computedStatisticsData.max =*max_element(argRawStatisticData.begin(), argRawStatisticData.end());
     
     //Min value computation
-    computedStatisticsData.min = *std::min_element(argRawStatisticData.begin(), argRawStatisticData.end());
+    computedStatisticsData.min =*min_element(argRawStatisticData.begin(), argRawStatisticData.end());
     
     //Average value computation
-    float sumOfAllElements = std::accumulate(argRawStatisticData.begin(), argRawStatisticData.end(), 0);   
+    float sumOfAllElements = accumulate(argRawStatisticData.begin(), argRawStatisticData.end(), 0);   
     
     computedStatisticsData.average = (sumOfAllElements / argRawStatisticData.size());
     
