@@ -10,6 +10,7 @@ StatsAlerter::StatsAlerter(float argMaxThreshold, std::vector<IAlerter*>& argAle
 
 void StatsAlerter::checkAndAlert(std::vector<float>& argStatisticsValues)
 {
+  bool bSetAlert = false;
   if(!argStatisticsValues.empty())
   {
     auto maximumStatisticValue = std::max_element(argStatisticsValues.begin(), argStatisticsValues.end());
@@ -18,14 +19,12 @@ void StatsAlerter::checkAndAlert(std::vector<float>& argStatisticsValues)
     {  
       if(*maximumStatisticValue > _MaxThreshold)
       {
-         for(auto statisticsValuesItr = _Alerters.begin(); statisticsValuesItr  != _Alerters.end(); statisticsValuesItr++)
-         {
-           IAlerter* temp_Alerters = *statisticsValuesItr;
-           temp_Alerters->raiseAlert();
-          // IAlerter* l_Alerters;
-          // l_Alerters = static_cast<IAlerter*>(*indOfStatisticsValues);
-          // l_Alerters->raiseAlert();
-         }
+        bSetAlert = true;
+      }
+      for(auto statisticsValuesItr = _Alerters.begin(); statisticsValuesItr  != _Alerters.end(); statisticsValuesItr++)
+      {
+        IAlerter* temp_Alerters = *statisticsValuesItr;
+        temp_Alerters->raiseAlert(bSetAlert);
       }
     }
   }
