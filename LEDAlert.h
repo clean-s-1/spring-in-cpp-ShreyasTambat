@@ -4,9 +4,9 @@ class LEDAlert : public IAlerter
 {
   public:
   
-  LEDAlert();
+  //LEDAlert();
   
-  ~LEDAlert();
+  //~LEDAlert();
   
   void raiseAlert();
   
