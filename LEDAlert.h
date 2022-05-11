@@ -8,7 +8,7 @@ class LEDAlert : public IAlerter
   
   //~LEDAlert();
   
-  void raiseAlert();
+  void raiseAlert(bool bValue);
   
   bool ledGlows;
 };
