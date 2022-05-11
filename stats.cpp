@@ -2,6 +2,7 @@
 #include<numeric>
 #include<cmath>
 
+using namespace std;
 using namespace Statistics;
 stats Statistics::ComputeStatistics(const std::vector<float>& argRawStatisticData) 
 {
@@ -21,7 +22,7 @@ stats Statistics::ComputeStatistics(const std::vector<float>& argRawStatisticDat
     computedStatisticsData.min = *std::min_element(argRawStatisticData.begin(), argRawStatisticData.end());
     
     //Average value computation
-    float sumOfAllElements = std::accumulate(argRawStatisticData.begin(), argRawStatisticData.end() , 0);   
+    float sumOfAllElements = std::accumulate(argRawStatisticData.begin(), argRawStatisticData.end(), 0);   
     
     computedStatisticsData.average = (sumOfAllElements / argRawStatisticData.size());
     
