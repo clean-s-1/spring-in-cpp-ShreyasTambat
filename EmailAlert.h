@@ -1,12 +1,12 @@
 #include "IAlerter.h"
 
-class EmailAlert : public IIAlerter
+class EmailAlert : public IAlerter
 {
   public:
   
   EmailAlert();
   
-  ~EmailAlert();\
+  ~EmailAlert();
   
   void raiseAlert();
   
