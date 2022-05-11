@@ -1,9 +1,9 @@
 #include "LEDAlert.h"
 
-LEDAlert::LEDAlert()
-{
-  ledGlows = false; 
-}
+//LEDAlert::LEDAlert()
+//{
+  //ledGlows = false; 
+//}
 
 void LEDAlert::raiseAlert()
 {
