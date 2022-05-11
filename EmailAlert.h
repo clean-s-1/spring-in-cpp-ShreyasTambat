@@ -8,7 +8,7 @@ class EmailAlert : public IAlerter
   
   //~EmailAlert();
   
-  void raiseAlert();
+  void raiseAlert(bool bValue);
   
   bool emailSent;
 };
