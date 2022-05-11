@@ -1,6 +1,6 @@
 #include IAlerter.h
 
-class EmailAlert
+class EmailAlert : public IIAlerter
 {
   public:
   
