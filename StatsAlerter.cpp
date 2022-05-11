@@ -9,7 +9,7 @@ StatsAlerter::StatsAlerter(float argMaxThreshold, std::vector<IAlerter*> argAler
   _Alerters = argAlerters;
 }
 
-StatsAlerter::checkAndAlert(std::vector<float> argStatisticsValues)
+void StatsAlerter::checkAndAlert(std::vector<float> argStatisticsValues)
 {
   double maximumStatisticValue = *std::max_element(argStatisticsValues.begin(), argStatisticsValues.end());
   
