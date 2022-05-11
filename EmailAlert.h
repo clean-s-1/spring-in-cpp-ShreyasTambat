@@ -4,9 +4,7 @@ class EmailAlert : public IAlerter
 {
   public:
   
-  //EmailAlert();
-  
-  //~EmailAlert();
+  EmailAlert();
   
   void raiseAlert(bool bValue);
   
