@@ -21,8 +21,8 @@ void StatsAlerter::checkAndAlert(const std::vector<float>& argStatisticsValues)
       }
       for(auto statisticsValuesItr = _Alerters.begin(); statisticsValuesItr  != _Alerters.end(); statisticsValuesItr++)
       {
-        IAlerter* temp_Alerters = *statisticsValuesItr;
-        temp_Alerters->raiseAlert(bSetAlert);
+        IAlerter* tempAlerterObj = *statisticsValuesItr;
+        tempAlerterObj->raiseAlert(bSetAlert);
       }
     }
   }
