@@ -1,21 +1,17 @@
 #include "stats.h"
 #include<numeric>
-#include<cmath>
+#include<math.h>
 #include<stdio.h>
 #include <algorithm>
 
 using namespace std;
 using namespace Statistics;
+
+stats::stats():average(NAN),max(NAN),min(NAN){}
+
 stats Statistics::ComputeStatistics(const std::vector<float>& argRawStatisticData) 
 {
     stats computedStatisticsData;
-    
-    if(0 == argRawStatisticData.size())
-    {
-       computedStatisticsData.max = NAN;
-       computedStatisticsData.min = NAN;
-       computedStatisticsData.average = NAN;  
-    }
     
     //Max value computation
     computedStatisticsData.max = *max_element(argRawStatisticData.begin(), argRawStatisticData.end());
@@ -26,8 +22,8 @@ stats Statistics::ComputeStatistics(const std::vector<float>& argRawStatisticDat
     //Average value computation
     double sumOfAllElements = accumulate(argRawStatisticData.begin(), argRawStatisticData.end(), 0);  
     
-    //computedStatisticsData.average = (sumOfAllElements / argRawStatisticData.size());
-    computedStatisticsData.average = 4.525;
+    computedStatisticsData.average = (sumOfAllElements / argRawStatisticData.size());
+   // computedStatisticsData.average = 4.525;
     
     return computedStatisticsData;  
 }
