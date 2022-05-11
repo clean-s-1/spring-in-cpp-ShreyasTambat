@@ -2,7 +2,7 @@
 using namespace std;
 namespace Statistics 
 {
-    class Stats
+    class stats
     {
         public:
         
@@ -10,6 +10,6 @@ namespace Statistics
         double max;
         double min;
         
-        Stats ComputeStatistics(const std::vector<double>& argRawStatisticData);
+        stats ComputeStatistics(const std::vector<double>& argRawStatisticData);
     };
 }
