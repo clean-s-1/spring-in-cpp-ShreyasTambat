@@ -6,9 +6,9 @@ namespace Statistics
     {
         public:
         
-        double average;
-        double max;
-        double min;            
+        float average;
+        float max;
+        float min;            
     };
-    stats ComputeStatistics(const std::vector<double>& argRawStatisticData);
+    stats ComputeStatistics(const std::vector<float>& argRawStatisticData);
 }
