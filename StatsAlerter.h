@@ -5,7 +5,7 @@ class StatsAlerter
 {
   public:
   
-  StatsAlerter(float argMaxThreshold, std::vector<IAlerter>& argAlerters);
+  StatsAlerter(float argMaxThreshold, std::vector<IAlerter*>& argAlerters);
   
   void checkAndAlert(std::vector<float>& argStatisticsValues);
   
