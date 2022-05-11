@@ -3,6 +3,11 @@
 #include "catch.hpp"
 #include "stats.h"
 #include <cmath>
+#include "EmailAlert.h"
+#include "LedAlert.h"
+#include "IAlerter.h"
+#include "StatsAlerter.h"
+
 using namespace Statistics;
 
 TEST_CASE("reports average, minimum and maximum") {
