@@ -1,4 +1,4 @@
-class IAlerter;
+#include "IAlerter.h"
 
 class EmailAlert : public IAlerter
 {
