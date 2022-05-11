@@ -6,7 +6,9 @@ class EmailAlert : public IIAlerter
   
   EmailAlert();
   
-  ~EmailAlert();
+  ~EmailAlert();\
+  
+  void raiseAlert();
   
   bool emailSent;
 }
