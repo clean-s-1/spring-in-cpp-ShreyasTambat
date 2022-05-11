@@ -14,7 +14,7 @@ stats Statistics::ComputeStatistics(const std::vector<float>& argRawStatisticDat
     {
        computedStatisticsData.max = NAN;
        computedStatisticsData.min = NAN;
-       computedStatisticsData.average = NAN;            
+       computedStatisticsData.average = NAN;  
     }
     
     //Max value computation
