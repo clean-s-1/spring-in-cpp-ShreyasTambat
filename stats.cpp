@@ -1,14 +1,14 @@
-#include "stats.h"
-#include<numeric>
-#include<stdio.h>
+#include "Stats.h"
+#include <numeric>
+#include <stdio.h>
 #include <algorithm>
 
 using namespace std;
 using namespace Statistics;
 
-stats Statistics::ComputeStatistics(const std::vector<float>& argRawStatisticData) 
+Stats Statistics::ComputeStatistics(const std::vector<float>& argRawStatisticData) 
 {
-    stats computedStatisticsData;
+    Stats computedStatisticsData;
     
     if(!argRawStatisticData.empty())
     {
