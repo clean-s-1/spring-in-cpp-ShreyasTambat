@@ -5,7 +5,7 @@ LEDAlert::LEDAlert()
   ledGlows = false; 
 }
 
-LEDAlert::raiseAlert()
+void LEDAlert::raiseAlert()
 {
   ledGlows = true;
 }
