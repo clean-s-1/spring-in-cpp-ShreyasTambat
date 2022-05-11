@@ -1,6 +1,5 @@
 #include "stats.h"
 #include<numeric>
-#include<math.h>
 #include<stdio.h>
 #include <algorithm>
 
