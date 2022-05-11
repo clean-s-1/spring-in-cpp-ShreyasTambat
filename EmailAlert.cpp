@@ -5,7 +5,7 @@
   //emailSent = false;
 //}
 
-void EmailAlert::raiseAlert()
+void EmailAlert::raiseAlert(bool bValue)
 {
-  emailSent = true;
+  emailSent = bValue;
 }
