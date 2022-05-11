@@ -1,5 +1,5 @@
 #include <vector>
-
+using namespace std;
 namespace Statistics 
 {
     class stats
