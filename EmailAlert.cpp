@@ -5,7 +5,7 @@ EmailAlert::EmailAlert()
   emailSent = false;
 }
 
-EmailAlert::raiseAlert()
+void EmailAlert::raiseAlert()
 {
   emailSent = true;
 }
