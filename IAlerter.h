@@ -8,7 +8,7 @@ class IAlerter
   
  // virtual ~IAlerter() { }
   
-  virtual void raiseAlert() = 0;
+  virtual void raiseAlert(bool bValue) = 0;
   
 };
   
