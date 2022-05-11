@@ -1,6 +1,7 @@
 #include "stats.h"
 #include<numeric>
 #include<cmath>
+#include<stdio.h>
 
 using namespace std;
 using namespace Statistics;
