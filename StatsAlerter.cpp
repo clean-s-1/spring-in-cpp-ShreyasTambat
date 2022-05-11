@@ -20,7 +20,8 @@ void StatsAlerter::checkAndAlert(std::vector<float> argStatisticsValues)
       {
          for(auto statisticsValuesItr = _Alerters.begin(); statisticsValuesItr  != _Alerters.end(); statisticsValuesItr++)
          {
-           (*statisticsValuesItr)->raiseAlert();
+           IAlerter* temp_Alerters = *statisticsValuesItr;
+           temp_Alerters->raiseAlert();
           // IAlerter* l_Alerters;
           // l_Alerters = static_cast<IAlerter*>(*indOfStatisticsValues);
           // l_Alerters->raiseAlert();
