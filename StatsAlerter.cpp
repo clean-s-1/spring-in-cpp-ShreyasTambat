@@ -4,7 +4,7 @@
 #include <algorithm>
 using namespace std;
 
-StatsAlerter::StatsAlerter(float argMaxThreshold, std::vector<IAlerter*> argAlerters)
+StatsAlerter::StatsAlerter(float argMaxThreshold, std::vector<IAlerter>& argAlerters)
 {
   _MaxThreshold = argMaxThreshold;
   _Alerters = argAlerters;
