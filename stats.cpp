@@ -2,6 +2,7 @@
 #include<numeric>
 #include<cmath>
 
+using namespace Statistics;
 stats Statistics::ComputeStatistics(const std::vector<double>& argRawStatisticData) 
 {
     stats computedStatisticsData;
