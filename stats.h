@@ -1,6 +1,7 @@
 #include <vector>
 
-namespace Statistics {
+namespace Statistics 
+{
     class Stats
     {
         public:
@@ -11,5 +12,5 @@ namespace Statistics {
         
         ComputeStatistics();
         Stats ComputeStatistics(const std::vector<double>& );
-    }
+    };
 }
