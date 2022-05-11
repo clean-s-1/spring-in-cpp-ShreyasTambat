@@ -7,7 +7,7 @@ class StatsAlerter
   
   StatsAlerter(float argMaxThreshold, std::vector<IAlerter>& argAlerters);
   
-  void checkAndAlert(std::vector<float> argStatisticsValues);
+  void checkAndAlert(std::vector<float>& argStatisticsValues);
   
   float _MaxThreshold;
   std::vector<IAlerter> _Alerters;
