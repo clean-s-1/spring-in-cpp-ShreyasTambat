@@ -2,6 +2,7 @@
 #include "IAlerter.h"
 #include<numeric>
 #include<cmath>
+using namespace std;
 
 StatsAlerter::StatsAlerter(float argMaxThreshold, std::vector<IAlerter*> argAlerters)
 {
