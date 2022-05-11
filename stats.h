@@ -8,8 +8,7 @@ namespace Statistics
         
         double average;
         double max;
-        double min;
-        
-        stats ComputeStatistics(const std::vector<double>& argRawStatisticData);
+        double min;            
     };
+    stats ComputeStatistics(const std::vector<double>& argRawStatisticData);
 }
