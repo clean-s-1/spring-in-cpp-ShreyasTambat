@@ -11,4 +11,4 @@ class EmailAlert : public IAlerter
   void raiseAlert();
   
   bool emailSent;
-}
+};
