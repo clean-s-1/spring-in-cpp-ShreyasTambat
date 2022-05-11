@@ -1,5 +1,4 @@
 #include "StatsAlerter.h"
-#include "IAlerter.h"
 #include<numeric>
 #include<cmath>
 #include <algorithm>
