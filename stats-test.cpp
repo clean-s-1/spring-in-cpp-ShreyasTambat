@@ -7,8 +7,6 @@
 #include "EmailAlert.h"
 #include "LEDAlert.h"
 
-class EmailAlert;
-class LEDAlert;
 using namespace Statistics;
 
 TEST_CASE("reports average, minimum and maximum") {
