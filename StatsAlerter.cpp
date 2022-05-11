@@ -1,12 +1,10 @@
 #include "StatsAlerter.h"
-#include<numeric>
-#include<cmath>
+#include <numeric>
+#include <cmath>
 #include <algorithm>
 using namespace std;
 
-StatsAlerter::StatsAlerter(float argMaxThreshold, std::vector<IAlerter*>& argAlerters):_MaxThreshold(argMaxThreshold), _Alerters(argAlerters)
-{
-}
+StatsAlerter::StatsAlerter(float argMaxThreshold, std::vector<IAlerter*>& argAlerters):_MaxThreshold(argMaxThreshold), _Alerters(argAlerters){}
 
 void StatsAlerter::checkAndAlert(const std::vector<float>& argStatisticsValues)
 {
