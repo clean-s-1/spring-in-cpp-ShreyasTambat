@@ -11,4 +11,4 @@ class LEDAlert : public IAlerter
   void raiseAlert();
   
   bool ledGlows;
-}
+};
