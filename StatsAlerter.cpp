@@ -15,6 +15,11 @@ StatsAlerter::checkAndAlert(std::vector<float> argStatisticsValues)
   
   if(maximumStatisticValue > _MaxThreshold)
   {
-    
+     for(auto indOfStatisticsValues = argStatisticsValues.begin(); indOfStatisticsValues  != end(); indOfStatisticsValues++)
+     {
+       IAlerter l_Alerters;
+       l_Alerters = static_cast<IAlerter*>(*indOfStatisticsValues);
+       l_Alerters.raiseAlerts();
+     }
   }
 }
