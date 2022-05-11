@@ -10,7 +10,6 @@ namespace Statistics
         double max;
         double min;
         
-        ComputeStatistics();
         Stats ComputeStatistics(const std::vector<double>& );
     };
 }
