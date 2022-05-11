@@ -7,9 +7,7 @@
 #include "EmailAlert.h"
 #include "LEDAlert.h"
 
-class StatsAlerter;
-class EmailAlert;
-class LEDAlert;
+#pragma once
 
 using namespace Statistics;
 
