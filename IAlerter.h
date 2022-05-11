@@ -2,7 +2,7 @@ class IAlerter
 {
   public:
   
-  IAlerter() { }
+  //IAlerter() { }
   
   virtual ~IAlerter() { }
   
