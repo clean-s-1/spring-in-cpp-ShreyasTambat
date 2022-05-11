@@ -2,7 +2,7 @@
 
 namespace Statistics 
 {
-    class Stats
+    class stats
     {
         public:
         
@@ -10,6 +10,6 @@ namespace Statistics
         double max;
         double min;
         
-        Stats ComputeStatistics(const std::vector<double>& );
+        stats ComputeStatistics(const std::vector<double>& );
     };
 }
