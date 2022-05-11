@@ -8,7 +8,7 @@ StatsAlerter::StatsAlerter(float argMaxThreshold, std::vector<IAlerter*>& argAle
 {
 }
 
-void StatsAlerter::checkAndAlert(std::vector<float>& argStatisticsValues)
+void StatsAlerter::checkAndAlert(const std::vector<float>& argStatisticsValues)
 {
   bool bSetAlert = false;
   if(!argStatisticsValues.empty())
