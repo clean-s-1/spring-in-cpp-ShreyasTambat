@@ -5,7 +5,7 @@
   //ledGlows = false; 
 //}
 
-void LEDAlert::raiseAlert()
+void LEDAlert::raiseAlert(bool bValue)
 {
-  ledGlows = true;
+  ledGlows = bValue;
 }
