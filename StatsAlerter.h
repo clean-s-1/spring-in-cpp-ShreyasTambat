@@ -1,5 +1,5 @@
 #include "IAlerter.h"
-#include<vector>
+#include <vector>
 
 class StatsAlerter
 {
