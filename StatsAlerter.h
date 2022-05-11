@@ -4,8 +4,8 @@ class StatsAlerter
 {
   public:
   
-  StatsAlerter(float, IAlerter*);
+  StatsAlerter(float argMaxThreshold, std::vector<IAlerter*> argAlerters);
   
   float _MaxThreshold;
-  IAlerter* _Alerters;
+  std::vector<IAlerter*> _Alerters;
 }
